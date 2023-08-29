@@ -21,7 +21,7 @@ const MongoClient = require('mongodb').MongoClient,
 	POST_DATA_SIZE_LIMIE = '50mb',
 	databaseName = 'turingMachine',
 	databaseCollection = 'saves',
-	url = "mongodb+srv://wustl-turing:turing469@cluster0.r2hqily.mongodb.net/" + databaseName + "?retryWrites=true&w=majority";
+	url = "mongodb+srv://wustl-turing:turing469@cluster0.r2hqily.mongodb.net/?retryWrites=true&w=majority";
 
 const app = new Express(),
 	WebpackConfig = DEV_ENVIRONMENT ? developmentWebpackConfig : productionWebpackConfig,
